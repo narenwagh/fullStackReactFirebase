@@ -3,12 +3,12 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAa-zBEX8hBuWLJuNv5m2T3Uyba8LElxJE",
-  authDomain: "readinglist-212de.firebaseapp.com",
-  projectId: "readinglist-212de",
-  storageBucket: "readinglist-212de.appspot.com",
-  messagingSenderId: "996587206889",
-  appId: "1:996587206889:web:ba3181ebd819645fdc9878",
+  apiKey: "AIzaSyCDbJLW6z4GuqoK597WODYXtanBi8SXpP8",
+  authDomain: "fsrf-b888c.firebaseapp.com",
+  projectId: "fsrf-b888c",
+  storageBucket: "fsrf-b888c.appspot.com",
+  messagingSenderId: "238655698200",
+  appId: "1:238655698200:web:b7cecb18f9162be253da6d",
 };
 
 // init firebase

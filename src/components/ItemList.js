@@ -1,17 +1,17 @@
 import { db } from "../firebase/config";
 import { doc, deleteDoc } from "firebase/firestore";
 
-export default function BookList({ books }) {
+export default function ItemList({ items }) {
   const handleClick = async (id) => {
-    await deleteDoc(doc(db, "books", id));
+    await deleteDoc(doc(db, "items", id));
   };
 
   return (
     <div className="book-list">
       <ul>
-        {books.map((book) => (
-          <li key={book.id} onClick={() => handleClick(book.id)}>
-            {book.title}
+        {items.map((item) => (
+          <li key={item.id} onClick={() => handleClick(item.id)}>
+            {item.title}
           </li>
         ))}
       </ul>
