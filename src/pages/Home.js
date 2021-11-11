@@ -9,8 +9,8 @@ export default function Home() {
 
   return (
     <div className="App">
-      {items && <ItemList items={items} />}
       <ItemForm />
+      {items && <ItemList items={items} />}
     </div>
   );
 }

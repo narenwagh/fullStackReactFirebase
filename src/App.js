@@ -11,7 +11,7 @@ function App() {
   const { user, authIsReady } = useAuthContext();
 
   return (
-    <div className="App">
+    <div className="App container mx-auto px-4">
       {authIsReady && (
         <BrowserRouter>
           <Navbar />

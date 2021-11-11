@@ -19,8 +19,8 @@ export default function ItemForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form className="flex flex-col" onSubmit={handleSubmit}>
+      <label className="flex flex-col w-96 m-auto">
         <span>Add a new item:</span>
         <input
           required

@@ -1,5 +1,6 @@
 import { db } from "../firebase/config";
 import { doc, deleteDoc } from "firebase/firestore";
+import Item from "./Item";
 
 export default function ItemList({ items }) {
   const handleClick = async (id) => {
@@ -7,13 +8,9 @@ export default function ItemList({ items }) {
   };
 
   return (
-    <div className="book-list">
+    <div className="flex flex-col m-auto w-96">
       <ul>
-        {items.map((item) => (
-          <li key={item.id} onClick={() => handleClick(item.id)}>
-            {item.title}
-          </li>
-        ))}
+        <Item items={items} handleClick={handleClick} />
       </ul>
     </div>
   );
