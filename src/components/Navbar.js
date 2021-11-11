@@ -9,7 +9,7 @@ export default function Navbar() {
   const { user } = useAuthContext();
 
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="flex justify-between items-center py-4">
       <h1>My List</h1>
       <ul className="flex justify-between items-center">
         {!user && (
@@ -20,7 +20,7 @@ export default function Navbar() {
             <li className=" ml-4">
               <Link to="/signup">Sign Up</Link>
             </li>
-            <li className="ml-2">
+            <li className="ml-4">
               <Toggle />
             </li>
           </div>
@@ -30,7 +30,7 @@ export default function Navbar() {
             <li onClick={logout}>
               <button>Log Out</button>
             </li>
-            <li className="ml-2">
+            <li className="ml-4">
               <Toggle />
             </li>
           </div>
